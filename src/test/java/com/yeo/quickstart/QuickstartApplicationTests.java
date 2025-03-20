@@ -1,4 +1,4 @@
-package com.bookManagement.quickstart;
+package com.yeo.quickstart;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

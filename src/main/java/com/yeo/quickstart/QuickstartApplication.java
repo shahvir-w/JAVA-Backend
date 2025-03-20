@@ -1,5 +1,6 @@
-package com.bookManagement.quickstart;
+package com.yeo.quickstart;
 
+import org.springframework.context.ApplicationContext;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -7,7 +8,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class QuickstartApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(QuickstartApplication.class, args);
+		ApplicationContext context = SpringApplication.run(QuickstartApplication.class, args);
+
+		Dev obj = context.getBean(Dev.class);
+		obj.build();
 	}
 
 }
