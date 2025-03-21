@@ -1,9 +1,17 @@
 package com.yeo.quickstart.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import org.springframework.stereotype.Component;
 
 @Component
+@Entity
 public class Product {
+
+    @Id
+    private int prodId;
+    private String prodName;
+    private int price;
 
     public Product() {
     }
@@ -13,10 +21,6 @@ public class Product {
         this.prodName = prodName;
         this.price = price;
     }
-
-    private int prodId;
-    private String prodName;
-    private int price;
 
     public int getProdId() {
         return prodId;
