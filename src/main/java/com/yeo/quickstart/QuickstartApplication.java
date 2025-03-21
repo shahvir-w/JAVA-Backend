@@ -9,9 +9,6 @@ public class QuickstartApplication {
 
 	public static void main(String[] args) {
 		ApplicationContext context = SpringApplication.run(QuickstartApplication.class, args);
-
-		Dev obj = context.getBean(Dev.class);
-		obj.build();
 	}
 
 }
